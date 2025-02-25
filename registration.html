@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <form action="" class="container container-shadow">
+        <div class="form-header">
+            <a href="index.html" class="back-btn">&lt;</a>
+            <h1 class="form-title">Заявка на вступление</h1>
+        </div>
+        <div class="form-body">
+            <fieldset class="fieldset">
+                <legend>Ваш никнейм в реальной жизни :)</legend>
+                <input type="text" class="name-input" placeholder="Имя">
+                <input type="text" class="name-input" placeholder="Фамилия">
+            </fieldset>
+            <div class="wrapper">
+                <p class="gender">Ваш пол</p>
+                <input type="radio" class="gender-input" name="gender" value="male" id="male">
+                <label for="male">М</label>
+                <input type="radio" class="gender-input" name="gender" value="female" id="female">
+                <label for="female">Ж</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" name="age" id="age" class="age">
+                <label for="age">Мне есть 18</label>
+            </div>
+            <div class="wrapper">
+                <label for="game" class="game-label">Ваша дисциплина</label>
+                <select name="game" id="game">
+                    <option value="cs-go">CS:GO</option>
+                    <option value="dota-2">Dota 2 </option>
+                    <option value="apex-legends">Apex Legends</option>
+                </select>
+            </div>
+            <textarea name="info" id="info" placeholder="Дополнительная информация"></textarea>
+            <button type="submit" class="submit">Отправить заявку</button>
+        </div>
+    </form>
+</body>
+</html>
